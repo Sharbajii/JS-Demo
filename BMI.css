@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey; /* Optional: To better visualize the centering */
+}
+
+.mbi {
+    background: darkblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between the input groups */
+}
+
+.wght, .tall {
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Set a fixed width for consistency */
+}
+
+input[type="text"] {
+    margin-bottom: 10px; /* Space between the input and the button */
+    padding: 5px; /* Optional: To improve the input's appearance */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: darkblue;
+}
