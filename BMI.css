@@ -1,10 +1,10 @@
-body {
+/* body {
     margin: 0;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightgrey; /* Optional: To better visualize the centering */
+    background-color: lightgrey; 
 }
 
 .mbi {
@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Space between the input groups */
+    gap: 20px; 
 }
 
 .wght, .tall {
@@ -23,16 +23,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px; /* Set a fixed width for consistency */
+    width: 200px; 
 }
 
 input[type="text"] {
-    margin-bottom: 10px; /* Space between the input and the button */
-    padding: 5px; /* Optional: To improve the input's appearance */
+    margin-bottom: 10px; 
+    padding: 5px; e 
 }
 
 #result {
     margin-top: 20px;
     font-size: 20px;
     color: darkblue;
-}
+} */
