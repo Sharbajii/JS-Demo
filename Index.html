@@ -7,7 +7,7 @@
     <title>JS Tutorial</title>
 </head>
 <body>
- <!--String 
+  <!--String 
               <h1 id="main-heading">Hello World</h1> 
 
    
@@ -18,8 +18,8 @@
     <button id="Submit-btn">Submit</button>
     <h3 id="result"></h3>-->  
     
-    <!--MBI PROGRAM-->
-   <!-- <div class="mbi">
+  <!--MBI PROGRAM-->
+  <!-- <div class="mbi">
         <div class="wght">
             <input type="text" id="weight" name="Weight" placeholder="Enter your Weight!">
             <button type="button" class="btn btn-primary btn-sm" onclick="calculateBMI()" >Submit</button>
@@ -50,13 +50,37 @@
       </div>
    </div>-->
 
+  <!--Array
+   <div id="students" style="font-size: 30px;"></div>-->
+   
+   <!--Array Exercise-->
+
+
+
+   <dive style="text-align: center; margin-top:50px;">
+        <div>      
+            <h2>Enter or delete a name </h2>
+            <input type="text" id="student-input">
+        </div> 
+
+        <div style="margin-top: 20px;">
+            <button id="submit-btn" >Submit</button>
+            <button id="delete-btn" >Delete</button>
+        </div>
+
+        <div>
+            <h3 id="students"></h3>
+        </div>
+   </dive>
+
 
 
 
 </body>
 
 <script>
-   //Math in JS
+   {
+    //Math in JS
    {
     // var number1 = 10
     //  var number2 = 4
@@ -268,8 +292,11 @@
         }*/
     }
 
-     
-    /*function calculateBMI() {
+     //small test bml
+   { 
+
+   
+     /*function calculateBMI() {
     var weight = document.getElementById('weight').value;
     var height = document.getElementById('height').value;
 
@@ -305,11 +332,12 @@
         } else {
         document.getElementById('result').innerText = 'Please enter both weight and height.';
         }
+    }
+        */
     
-    
-}*/
-
-    /*document.getElementById("submit-btn").addEventListener("click", function() {
+   
+/*
+    document.getElementById("submit-btn").addEventListener("click", function() {
     var weight = document.getElementById("weight-input").value
     var height = document.getElementById("Height-input").value
 
@@ -341,9 +369,98 @@
     document.getElementById("bmi-category").innerHTML= bmiCategory
 })*/
 
+   }
+  
+    //Array 
+    { 
+  /*var st ="Anas"
+  var st2 ="Bara"
+  var st3 ="Sarah"
+  var st4 ="Nour"
+  var st5 ="Hamza"
+  var st6 ="Alex"
+  document.getElementById("student").innerHTML= st
+  document.getElementById("student").innerHTML += st2*/
 
+  /*var students = ["Anas", " Bara", " Sarah", " Nour", " Alex", " Omar"] 
 
+  document.getElementById("students").innerHTML=students*?
 
+  /* students.push("Yahia")
+   students.push("Mahmoud")
+   students[4] = "Ammar"
+   students.pop()
+   console.log(students)*/
+
+  //P2 splice
+  /*
+/console.log(students)
+
+ students.splice(4, 1)
+console.log(students)
+
+students.splice(2, 2)
+ console.log(students)
+
+ students.splice(2, 1, "Obida")
+ console.log(students)
+
+students.splice(2, 0, "Waled" , "Mohammad")
+ console.log(students)*/
+ 
+ /*var arr=[10, 40, 70, 50, 30, 100, 20]
+   console.log(Array.isArray(arr))
+
+   console.log(arr.includes(60))
+
+   console.log(arr.indexOf(30))
+   console.log(arr.indexOf(500))
+
+      console.log(arr)
+
+      arr.shift()
+      console.log(arr)
+
+      arr.unshift(900)
+      console.log(arr)
+
+      arr.reverse()
+      console.log(arr)*/
+
+}
+
+}
+  
+//Array-Exercises
+{
+    var students =  ["Anas", "Bara"]
+
+    function updateResult(){
+    document.getElementById("students").innerHTML = students.join(", ")
+    }
+
+    document.getElementById("submit-btn").addEventListener("click", function(){
+        var studentName =document.getElementById("student-input").value
+
+        if(studentName && !students.includes(studentName)){
+            students.push(studentName)
+            updateResult()
+            document.getElementById("student-input").value=""
+        }
+    })
+
+    document.getElementById("delete-btn").addEventListener("click", function(){
+
+        var studentName = document.getElementById("student-input").value
+        var index = students.indexOf(studentName)
+
+        if(studentName !== -1 ){
+            students.splice(index, 1)
+            updateResult()
+        }
+   })
+   updateResult();
+}
 
 
 
@@ -362,3 +479,4 @@
 
 </script>
 </html>
+   
