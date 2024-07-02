@@ -19,7 +19,8 @@
     <h3 id="result"></h3>-->  
     
   <!--MBI PROGRAM-->
-  <!-- <div class="mbi">
+  <!-- 
+  <div class="mbi">
         <div class="wght">
             <input type="text" id="weight" name="Weight" placeholder="Enter your Weight!">
             <button type="button" class="btn btn-primary btn-sm" onclick="calculateBMI()" >Submit</button>
@@ -32,7 +33,8 @@
 
         <div clase="result" id="result"></div>
     </div>-->
-  <!-- <div style="text-align: center; background-color: bisque;">
+  <!-- 
+    <div style="text-align: center; background-color: bisque;">
        <div>
             <h3>Weight</h3>
             <input type="text" id="weight-input">
@@ -50,13 +52,9 @@
       </div>
    </div>-->
 
-  <!--Array
+   <!--Array
    <div id="students" style="font-size: 30px;"></div>-->
-   
-   <!--Array Exercise-->
-
-
-
+   <!--Array Exercise
    <dive style="text-align: center; margin-top:50px;">
         <div>      
             <h2>Enter or delete a name </h2>
@@ -71,8 +69,34 @@
         <div>
             <h3 id="students"></h3>
         </div>
-   </dive>
+   </dive>-->
 
+<!--For Loop exercise
+<div id="result" style="text-align: center; font-size: 30px;"></div>-->
+
+<!--string loop exercise
+<div style="text-align: center;" >
+    <h1>Vowel Letters (A, E, I, O, U)</h1>
+    <input id="user-input" type="text">
+    <button id="submit">Submit</button>
+</div>
+<div style="text-align: center; font-size: 30px;" id="result"></div>-->
+
+<!--Array with loops
+<div id="school" style="font-size: 50px; text-align: center;"></div>-->
+<!--Array loops exercise
+    <div style="text-align: center; font-size: 50px;">
+        <div>
+            Find Student
+            <br>
+            <input id="student-Input" type="text">
+            <button id="search">Search</button>
+        </div>
+
+        <div id="school" style="font-size: 30px;"></div>
+        <h2 id="result"></h2>
+    </div>-->
+    
 
 
 
@@ -96,7 +120,7 @@
 }
     
     //Data Type
-   {
+    {
     // var title = "Hello World"
     // var titleLowerCased = title.toLowerCase()
     // var myChar = title.charAt(8)
@@ -159,7 +183,7 @@
         //console.log(x)
     }
 
-     //Logical opertor
+    //Logical opertor
     {
        /* var x = 10
         var y = 9
@@ -202,8 +226,7 @@
     else{
         console.log("Young and age is:" + age)
     }*/
-
-}
+   }
 
     //Conditions in JS (if else statment)
     {
@@ -292,10 +315,8 @@
         }*/
     }
 
-     //small test bml
-   { 
-
-   
+    //small test bml
+    { 
      /*function calculateBMI() {
     var weight = document.getElementById('weight').value;
     var height = document.getElementById('height').value;
@@ -334,10 +355,7 @@
         }
     }
         */
-    
-   
-/*
-    document.getElementById("submit-btn").addEventListener("click", function() {
+   /* document.getElementById("submit-btn").addEventListener("click", function() {
     var weight = document.getElementById("weight-input").value
     var height = document.getElementById("Height-input").value
 
@@ -368,11 +386,10 @@
 
     document.getElementById("bmi-category").innerHTML= bmiCategory
 })*/
-
-   }
-  
+    }
+   
     //Array 
-    { 
+    {
   /*var st ="Anas"
   var st2 ="Bara"
   var st3 ="Sarah"
@@ -429,38 +446,126 @@ students.splice(2, 0, "Waled" , "Mohammad")
 
 }
 
-}
-  
-//Array-Exercises
-{
-    var students =  ["Anas", "Bara"]
+   //For Loop 
+    {
+    // for (var i = 1; i <= 1000 ; i++){
 
-    function updateResult(){
-    document.getElementById("students").innerHTML = students.join(", ")
+    //     console.log(i)
+   // }
+  // console.log("done")
+
+
+   // for(var number = 0; number <= 500; number++){
+   
+   //     if(number % 2 == 0){
+   //         console.log("Even number" + " " +number)
+   //     }
+   //     else{
+   //         console.log("odd number" + " " + number)
+   //     }
+   // }
+   
+   
+   //for loop exercise
+   // for(var number = 0; number <= 30; number++){
+   //     document.getElementById("result").innerHTML +=`10 X ${number} = ${number * 10} </br>`
+   // }
+   }
+   
+    // String with loops
+    {
+   // var name ="El'Medoo"
+   // for(var index = 0; index < name.length; index++){
+   //     console.log(name[index] +" "+ index)
+   // }
+   
+   // var name2 = "welcome "
+   // for ( var i in name2){
+   //     console.log(name2[i])
+   // }
+   
+   // var name3 = "to our course"
+   // for(var i of name3){
+   //     console.log(i)
+   // }
+   }
+   
+    //string-loop exercise
+    {
+   // document.getElementById("submit").addEventListener("click", function(){
+   
+   //     var userInput = document.getElementById("user-input").value
+   //     var result=""
+   
+   //     for (var uInput = 0; uInput < userInput.length; uInput++){
+   //         if(!'aeiouAEIOU'.includes(userInput[uInput])){
+   //             result += userInput[uInput]+ '</br>'
+   //         } 
+   //     }
+   //     document.getElementById("result").innerHTML = result
+   // })
+   }
+ 
+    //Array with loops
+    {
+    // var School = ["T.Ali", "T.Bara", "Anas", "Ahmad", "Omar", "Khaled"]
+
+    // for (var memberIndex = 0; memberIndex <= School.length - 1; memberIndex++){
+    //     if(School[memberIndex][0] == "T"){
+    //         document.getElementById("school").innerHTML += School[memberIndex] + "</br>"
+    //     }
+    // }
+
+    //Array-loops exercise
+    /*var school = ["Anas", "Anna", "Bara", "Attila", "Khaled", "Wahed", "Waled", "Mohammad"]
+    for (var memberIndex = 0; memberIndex < school.length; memberIndex++){
+        document.getElementById("school").innerHTML += school[memberIndex] + " -- "
     }
-
-    document.getElementById("submit-btn").addEventListener("click", function(){
-        var studentName =document.getElementById("student-input").value
-
-        if(studentName && !students.includes(studentName)){
-            students.push(studentName)
-            updateResult()
-            document.getElementById("student-input").value=""
-        }
-    })
-
-    document.getElementById("delete-btn").addEventListener("click", function(){
-
-        var studentName = document.getElementById("student-input").value
-        var index = students.indexOf(studentName)
-
-        if(studentName !== -1 ){
-            students.splice(index, 1)
-            updateResult()
-        }
-   })
-   updateResult();
+    
+        document.getElementById("search").addEventListener("click", function(){
+        var userInput = document.getElementById("student-Input").value.toLowerCase();
+            { // using boolean
+                //     for(var studentName of school){
+           //         var loweredStudent = studentName.toLowerCase()
+           //         if(userInput == loweredStudent){
+           //              document.getElementById("result").innerHTML = `${userInput} is in the school`;
+           //             studentFound = true
+           //         }
+           //     }
+           //         if(!studentFound){
+           //             document.getElementById("result").innerHTML = `${userInput} is NOT in the school`;
+           //         }
+           //     })
+            }
+            { // using break alone
+             // for(var studentName of school){
+             //     var loweredStudent = studentName.toLowerCase()
+                 
+             //     if(userInput == loweredStudent){
+             //          document.getElementById("result").innerHTML = `${userInput} is in the school`;
+             //        break
+             //     }
+             //     document.getElementById("result").innerHTML = `${userInput} is NOT in the school`;
+             // }
+            }
+            { // using break and continue
+            //         for(var studentName of school){
+            //     var loweredStudent = studentName.toLowerCase()
+            //     document.getElementById("result").innerHTML = `${userInput} is NOT in the school`;
+                    
+            //     if(userInput != loweredStudent){
+            //       continue
+            //     }
+            //     document.getElementById("result").innerHTML = `${userInput} is in the school`;
+            //     break
+            
+            //    }
+            }
+    
+        })*/
 }
+}
+
 
 
 
