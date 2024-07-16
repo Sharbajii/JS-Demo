@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <link rel="stylesheet" href="MBI.css">>-->
-   <!-- <link rel="stylesheet" href="anonymousChallenge.css"> -->
 
-  <script src="JS-Toturial/23-FunctionsRandomBGColor.js"></script>
+
+   <!-- <link rel="stylesheet" href="CSS-Files/MBI.css">>-->
+   <!-- <link rel="stylesheet" href="CSS-Files/anonymousChallenge.css"> -->
+
+
+
+  <!-- <script src="JS-Toturial/26-Objects.js"></script>  -->
+
+  <!-- <script src="JS-Toturial/23-FunctionsRandomBGColor.js"></script> -->
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script> -->
+   
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
     <title>JS Tutorial</title>
 
-    <style>
-        body{
-            padding: 0;
-            margin: 0;
-        }
+  
+
         
+        
+    </style>
+ 
     </style>
 </head>
 <body>
@@ -84,7 +95,6 @@
    </dive>-->
 
  
-
    <!--string loop exercise
 <div style="text-align: center;" >
     <h1>Vowel Letters (A, E, I, O, U)</h1>
@@ -131,29 +141,87 @@
     <!-- first way with css file 
     <di class="d-flex">
         <button id="start-btn">Start</button>
-    </di> -->
-     
-    <!-- second way css inside body  -->
-
-
-
-
-
-
-
-
-
-
-
-
+    </di> -->    
+    <!-- second way css inside body  
      <div id="bg" style="display: flex; justify-content: center; align-items: center; background:gray; height: 100vh; transition: all 0.5s ease;" >
 
         <button id="startBtn" onClick="changeColor()" style="font-size: 30px; width: 250px; height: 100px; border: solid;  border-color: blue;  border-radius: 20px; box-shadow: 0px 11px 16px rgba(0, 0, 0, 0.15); cursor: pointer;">Start</button>
-     </div> 
+     </div> -->
 
 
+     <!-- Objects exercise 
+     <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: rgb(85, 1, 85);">
+        <table id="students" style="width: 50%; font-size: 50px; color: white;">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Year</th>
+            </tr>
+        </table>
+    </div>
+    -->
 
 
+    <!-- Html Elements in JS 
+    <h3 id = "title" class="title">Hello World!</h3>
+    <h3 id = "title" class="title">Hello Anas</h3>
+    <h3 id = "title" class="title">i want to go home</h3>-->
+   
+    
+    <!-- Styles and Attributes in JS 
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; font-size: 40px;">
+
+        <h2 id="title">Hello World </h2>
+        <input value="test" type="text" x = "wow you B">
+    </div>-->
+
+
+    <!--Html Events in JS 
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; font-size: 40px;">
+        <h2 onclick="changeTitle2()" id="title">Hello World</h2>
+        <br>
+        <h3 onclick="this.innerHTML = 'Hi World!'" id="title-2">Amazing</h3>
+        <br>
+        <h4 id="title-3">Hello World</h4>  
+    </div>-->
+
+
+    <!-- EventListners in JS 
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; font-size: 40px;">
+        <h2 id="title">Hello World</h2>
+        <br>
+        <h4 id="title-2">test</h4>  
+    </div>-->
+
+
+   <!-- add and remove elements through JS
+    <div style="color: white; width: 100%; font-size: 40px; height: 50vh; background-color: rgb(0, 0, 97);">
+
+        <ul id="ul">
+            <li>Ahmad</li>
+            <li>Anas</li>
+            <li id="remove">Mahmmod</li>
+        </ul>
+    </div>-->
+
+
+    <!-- add and remove elements through JS exercise 
+    <div style=" color: white; width: 100%; font-size: 40px; height: 50vh; background: rgb(0, 0, 97);">
+        <div style=" display:flex; justify-content: center; align-items: center; height: 50%;">
+
+             <div style="height: 40px;">
+                 <input onchange="nameInputChaged(this)" type="text" id="name-input" style="height: 100%; width: 300px; border: none;">
+                 <button id="submit-btn" style="border: none; background: white; height: 100%; width: 100px;">Send</button>
+             </div>
+        </div>
+
+        <div style="text-align: center;">
+              <h3 id="currentName">WOOOW</h3>
+        </div>
+    </div>
+    <div style=" color: black; display:flex; justify-content: center; align-items: center; width: 100%; font-size: 50px; height: 50vh;">
+        <h2 id="message">Enter a name please</h2>
+    </div>-->
 
 
 
@@ -170,6 +238,9 @@
 
 
 
+
+
+ 
 </script>
 </html>
    
